@@ -4,6 +4,7 @@ Bitbucket webhook to automatically run code reviews when pull requests are opene
 ## Directory
 - 'src/': Main folder that handles code review webhook logic.
 - 'tests/': Test folder that includes unit tests.
+- 'docs/': Documentation folder that includes more information on the architecture and usage of the project.
 
 ## Development Rules
 - Use uv for package management: uv add package
