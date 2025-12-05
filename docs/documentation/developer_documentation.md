@@ -16,7 +16,7 @@
 ```cp .env.template .env```
 **Open .env file and input the necessary information.**
 - feedback_forms should be a link to a Microsoft form/Google form.
-- Provide links without 'https://' (eg. 'www.github.com' instead of 'https://wwww.github.com')
+- Provide links without 'https://' (eg. 'github.com' instead of 'https://github.com')
 **Start development and push changes to Bitbucket.**
 
 ## Deployment
