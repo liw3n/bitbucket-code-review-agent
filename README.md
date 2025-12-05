@@ -3,7 +3,7 @@ This is a code review bot for Bitbucket repositories to be used as a webhook. Co
 
 The reviews include comments for unit test, documentation and logic (a check of PR changes against Jira and Confluence requirements). It uses indexing and semantic search techniques for deep contextual understanding of the repository.
 
-Performance metrics of Sentinel review bot tracked and stored in your Postgres database. Reviewers can also give feedback on the review comments which are also stored in the same Postgres database. Refer to [Developer Documentation](https://github.com/liw3n/bitbucket-code-review-agent/blob/main/docs/documentation/developer_documentation.md#accessing-metrics-database) on how to access these metrics.
+Performance metrics of Sentinel review bot are tracked and stored in your Postgres database. Reviewers can also give feedback on the review comments which are also stored in the same Postgres database. Refer to [Developer Documentation](https://github.com/liw3n/bitbucket-code-review-agent/blob/main/docs/documentation/developer_documentation.md#accessing-metrics-database) on how to access these metrics.
 
 ## Project Requirements
 - Own a SSH and endpoint to deploy the Sentinel code review.
