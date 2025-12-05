@@ -1,0 +1,15 @@
+## Project Overview -- Sentinel
+This is a code review bot for Bitbucket repositories to be used as a webhook. Code reviews will be triggered once a pull request is opened or modified. 
+
+The reviews includes comments for unit test, documentation and logic (a check of PR changes against Jira and Confluence requirements). It uses indexing and semantic search techniques for deep contextual understanding of the repository.
+
+## Project Requirements
+- Own a own SSH and endpoint to deploy the Sentinel code review.
+- Ollamma endpoint for vector embeddings.
+- Qdrant vector database.
+- Postgres database.
+- uv package manager.
+
+## Steps
+1. Sentinel first needs to be deployed as a webhook. Follow steps in the [Developer Documentation](https://github.com/liw3n/bitbucket-code-review-agent/blob/main/docs/documentation/developer_documentation.md) for more details.
+2. Once the webhook is deployed, follow the steps in [User Documentation](https://github.com/liw3n/bitbucket-code-review-agent/blob/main/docs/documentation/user_documentation.md) to start using the code review bot.

@@ -1,0 +1,5 @@
+language: python
+test_folder: <path/to/test_folder> or <subfolder>
+indexing: <True> or <False>
+deadcode: <True> or <False>
+doc_folder: <path/to/doc_folder>

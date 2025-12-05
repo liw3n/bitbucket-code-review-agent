@@ -1,0 +1,19 @@
+repos:
+  - repo: local
+    hooks:
+      - id: build-diagrams
+        name: Build Diagrams
+        description: This hook builds diagrams from the diags folder using Diagrams package
+        files: ^diags/
+        types: [file]
+        pass_filenames: false
+        entry: make diagrams
+        language: system
+      - id: build-documentation
+        name: Build Documentation
+        description: This hook builds documentation from the docs folder using MkDocs
+        files: ^docs/
+        types: [file]
+        pass_filenames: false
+        entry: mkdocs build
+        language: system

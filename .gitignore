@@ -1,0 +1,17 @@
+.pytest_cache/
+.venv
+.env
+**/__pycache__
+code_for_review/
+code_for_review_**/
+review.txt
+qdrant_storage/
+Zscaler.pem
+
+# Ignore contents in logs and qdrant_id folder but keep folder
+/logs/**
+/qdrant_id/**
+!/logs/
+!/logs/.gitkeep
+!/qdrant_id/
+!/qdrant_id/.gitkeep

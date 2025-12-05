@@ -1,0 +1,5 @@
+language: python
+test_folder: tests/
+indexing: False
+deadcode: False
+doc_folder: docs/

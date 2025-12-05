@@ -1,0 +1,42 @@
+services:
+  qdrant:
+    image: qdrant/qdrant
+    environment:
+      - QDRANT__SERVICE__HOST=0.0.0.0
+    volumes:
+      - sentinel_data:/qdrant/storage:z
+    ports:
+      - "6333:6333" 
+    networks:
+      - east-west
+
+  server:
+    image: sentinel-server:latest
+    volumes:
+      - ./qdrant_id:/sentinel/qdrant_id
+      - ./logs:/sentinel/logs
+    networks:
+      - north-south
+      - east-west
+
+  db:
+    image: postgres
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    volumes:
+       - pgdata:/var/lib/postgresql
+    networks:
+      - east-west
+
+networks:
+  north-south:
+    external: true
+  east-west:
+    external: true
+
+volumes:
+  sentinel_data:
+    external: true
+  pgdata:
