@@ -6,7 +6,7 @@ The reviews include comments for unit test, documentation and logic (a check of 
 Performance metrics of Sentinel review bot are tracked and stored in your Postgres database. Reviewers can also give feedback on the review comments which are also stored in the same Postgres database. Refer to [Developer Documentation](https://github.com/liw3n/bitbucket-code-review-agent/blob/main/docs/documentation/developer_documentation.md#accessing-metrics-database) on how to access these metrics.
 
 ## Project Requirements
-- Own a SSH and endpoint to deploy the Sentinel code review.
+- Cloud server to deploy the Sentinel code review.
 - Ollamma endpoint for vector embeddings.
 - Qdrant vector database.
 - Postgres database.
